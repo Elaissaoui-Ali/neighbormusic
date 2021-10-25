@@ -1,0 +1,38 @@
+# Gradle
+/build/
+/packages/react-native-gradle-plugin/build/
+/packages/rn-tester/android/app/.cxx/
+/packages/rn-tester/android/app/build/
+/packages/rn-tester/android/app/gradle/
+/packages/rn-tester/android/app/gradlew
+/packages/rn-tester/android/app/gradlew.bat
+/ReactAndroid/build/
+/ReactAndroid/gradle/
+/ReactAndroid/gradlew
+/ReactAndroid/gradlew.bat
+/template/android/app/build/
+/template/android/build/
+
+
+# Android Studio
+.project
+.settings
+.classpath
+
+
+.watchmanconfig
+
+
+# Android
+.idea
+.gradle
+local.properties
+*.iml
+/android/
+
+
+# Node
+node_modules
+*.log
+.nvm
+/bots/node_modules/
