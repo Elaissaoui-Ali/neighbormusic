@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "966713430734",
+    "firebase_url": "https://yassintvtest-e5548-default-rtdb.firebaseio.com",
+    "project_id": "yassintvtest-e5548",
+    "storage_bucket": "yassintvtest-e5548.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966713430734:android:61314ae7a4a329c9ac769f",
+        "android_client_info": {
+          "package_name": "com.elaissaoui.neighbormusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966713430734-grtidgrbu5d239nehftgq1abaktldqfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFZ_iKR-dpKbgm_y1VNmuKYtvnFYkHNis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966713430734-grtidgrbu5d239nehftgq1abaktldqfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966713430734:android:274173183989a25fac769f",
+        "android_client_info": {
+          "package_name": "com.yacinsport.channel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966713430734-grtidgrbu5d239nehftgq1abaktldqfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFZ_iKR-dpKbgm_y1VNmuKYtvnFYkHNis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966713430734-grtidgrbu5d239nehftgq1abaktldqfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,7 +15,7 @@ const DrumsScreen = (props) => {
     const {cpaApiKey, cpaUserId} = useSelector(state => state.adsIdsReducer);
 
     const playSound = (sound) => {
-        const white = new Sound('key_white_' + (sound.toString()) + '.mp3', Sound.MAIN_BUNDLE, (error => {
+        const white = new Sound(sound + '.mp3', Sound.MAIN_BUNDLE, (error => {
             if (error) {
                 console.log('error to load');
                 return;
@@ -42,7 +42,7 @@ const DrumsScreen = (props) => {
                 flex: 1,
                 width: '100%',
             }}>
-                <TouchableOpacity onPress={()=>{playSound(1)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_kick_5')}} style={{
                     position: 'absolute',
                     alignSelf:'center',
                     bottom: height*0.28,
@@ -55,7 +55,7 @@ const DrumsScreen = (props) => {
                 </TouchableOpacity>
 
 
-                <TouchableOpacity onPress={()=>{playSound(2)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_kick_1')}} style={{
                     position: 'absolute',
                     left: 10,
                     bottom:height*0.48
@@ -67,7 +67,7 @@ const DrumsScreen = (props) => {
                     }}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>{playSound(3)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_kick_2')}} style={{
                     position: 'absolute',
                     right: 10,
                     bottom:height*0.48,
@@ -79,7 +79,7 @@ const DrumsScreen = (props) => {
                     }}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>{playSound(4)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_hats')}} style={{
                     position: 'absolute',
                     left: 10,
                     bottom: 0
@@ -91,7 +91,7 @@ const DrumsScreen = (props) => {
                     }}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>{playSound(5)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_hats')}} style={{
                     position: 'absolute',
                     right: 10,
                     bottom: 0
@@ -104,7 +104,7 @@ const DrumsScreen = (props) => {
                 </TouchableOpacity>
 
 
-                <TouchableOpacity onPress={()=>{playSound(6)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_kick_4')}} style={{
                     position: 'absolute',
                     left: screenWidth * 0.2,
                     bottom: 0
@@ -116,7 +116,7 @@ const DrumsScreen = (props) => {
                     }}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>{playSound(7)}} style={{
+                <TouchableOpacity onPress={()=>{playSound('drums_kick_3')}} style={{
                     position: 'absolute',
                     right: screenWidth * 0.2,
                     bottom: 0
