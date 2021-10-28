@@ -15,14 +15,44 @@ const App = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // database().ref('/path')
-    //     .on('value',
-    //         (snapshot) => {
-    //           const ids = snapshot.val();
-    //           if (snapshot.hasChild('bannerId')) {
-    //             dispatch(actions.setAdmobBannerId(ids.bannerId));
-    //           }
-    //         });
+      database().ref('/CPAIds')
+          .on('value',
+              (snapshot) => {
+                  const ids = snapshot.val();
+                  if (snapshot.hasChild('userId')) {
+                      dispatch(actions.setCPAUserId(ids.userId));
+                  }
+                  if (snapshot.hasChild('apiKey')) {
+                      dispatch(actions.setCPAApiKey(ids.apiKey));
+                  }
+                  console.log('CPA : get Ids successfully');
+              });
+
+      database().ref('/admobIds')
+          .on('value',
+              (snapshot) => {
+                  const ids = snapshot.val();
+                  if (snapshot.hasChild('bannerId')) {
+                      dispatch(actions.setAdmobBannerId(ids.bannerId));
+                  }
+                  if (snapshot.hasChild('interstitialId')) {
+                      dispatch(actions.setAdmobInterstitialId(ids.interstitialId));
+                  }
+                  console.log('admob : get Ids successfully');
+              });
+
+      database().ref('/fbadsIds')
+          .on('value',
+              (snapshot) => {
+                  const ids = snapshot.val();
+                  if (snapshot.hasChild('bannerId')) {
+                      dispatch(actions.setFacebookBannerId(ids.bannerId));
+                  }
+                  if (snapshot.hasChild('interstitialId')) {
+                      dispatch(actions.setFacebookInterstitialId(ids.interstitialId));
+                  }
+                  console.log('facebook : get Ids successfully');
+              });
 
   }, []);
 
